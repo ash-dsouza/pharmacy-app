@@ -29,7 +29,7 @@ message: string = '';
   {
     name: 'Paracetamol',
     image: '/images/Paracetamol.jpg',
-    description: 'Effective for fever and mild pain relief.'
+    description: 'Paracetamol is a medicine used to treat mild to moderate pain and fever '
   },
   {
     name: 'Glycomet GP1',
