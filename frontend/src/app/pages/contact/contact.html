@@ -1,0 +1,36 @@
+<section class="contact-section py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left: Contact Form -->
+      <div class="col-md-6">
+        <h2 class="text-primary mb-3">Get in Touch with <strong>PharmaX</strong></h2>
+        <p class="lead text-muted">Have a question or need help? Fill out the form and our support team will reach out to you!</p>
+        
+        <form (ngSubmit)="submitForm()" #form="ngForm" class="mt-4">
+          <div class="mb-3">
+            <label for="name" class="form-label fw-semibold">Name</label>
+            <input type="text" class="form-control shadow-sm" id="name" required [(ngModel)]="contactForm.name" name="name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label fw-semibold">Email</label>
+            <input type="email" class="form-control shadow-sm" id="email" required [(ngModel)]="contactForm.email" name="email" />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label fw-semibold">Message</label>
+            <textarea class="form-control shadow-sm" id="message" rows="4" required [(ngModel)]="contactForm.message" name="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg mt-2 shadow-sm">
+            <i class="bi bi-send-fill me-2"></i> Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Right: Illustration -->
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img src="images/Contact.jpg" alt="Contact PharmaX" class="img-fluid rounded shadow-lg animate__animated animate__fadeInRight" style="max-height: 400px;" />
+      </div>
+
+    </div>
+  </div>
+</section>
